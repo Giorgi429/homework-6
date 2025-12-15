@@ -1,0 +1,31 @@
+.container {
+  width: main (100%, 1440px);
+  margin: auto;
+}
+header {
+  background-color: #284069;
+  padding: 53px 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  background-color: aqua;
+}
+ul {
+  display: flex;
+  column-gap: 50px;
+}
+.active,
+.inactive {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ddeaf8;
+}
+.active {
+  color: #f56013;
+}
