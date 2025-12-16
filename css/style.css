@@ -9,8 +9,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+
 .link {
   background-color: aqua;
+  border-radius: 10px;
 }
 ul {
   display: flex;
@@ -28,4 +31,141 @@ ul {
 }
 .active {
   color: #f56013;
+}
+/* --- Company News სექცია --- */
+.cards-section {
+  background-color: #ddeaf8;
+  padding: 94px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  width: 1440px;
+  padding-left: 98px;
+  box-sizing: border-box;
+}
+
+.company-news-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #f56013;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+
+  gap: 40px;
+
+  justify-content: center;
+
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*  ქარდი */
+.article-card {
+  width: 400px;
+  height: 354px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 30px 104px 30px;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+/*  სურათი */
+.article-image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.read-more-button {
+  width: 113px;
+  height: 32px;
+  background-color: #f56013;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* --- Footer სექცია --- */
+footer {
+  background-color: #2e4057;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-us-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+/* სოციალური ქსელის ხატულების სტილი */
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+/* სურათის სტილი */
+.icon-link img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ჰოვერ ეფექტი */
+.icon-link:hover {
+  transform: scale(1.2);
 }
